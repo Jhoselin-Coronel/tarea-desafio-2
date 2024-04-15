@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{latexsym,amssymb}
+\usepackage{pifont}
+\newtheorem{teor}{Teorema}
+\title{MEDIDAS Y TEOREMA}
+\author{Jhoselin Angélica Coronel Condori}
+\date{Abril 2024}
+\begin{document}
+\maketitle
+\section{Medidas}
+\begin{dinglist}{219}
+\item Por espacio medible entendemos un par ordenado $(\Omega, \mathcal{B})$ que consta de un conjunto $\Omega$ y una $\sigma$-álgebra $\mathcal{B}$ de subconjuntos de $\Omega$. Un subconjunto $A$ de $\Omega$ se llama medible si $A \in \mathcal{B}$.
+\item Una medida $\mu$ en un espacio medible $(\Omega, \mathcal{B})$ es una función $\mu: \mathcal{B} \rightarrow [0, \infty]$ que satisface:
+\begin{align*}
+\mu(\emptyset) &= 0 \\
+\mu\left(\bigcup_{i}^{\infty} E_{i}\right) &= \sum_{i}^{\infty} \mu(E_{i})
+\end{align*}
+para cualquier sucesión $\{E_{i}\}$ de conjuntos medibles disjuntos, es decir, $E_{i} \cap E_{j} = \emptyset$, $E_{i} \in \mathcal{B}$, $i \neq j$.
+\item $(\Omega, \mathcal{B}, \mu)$ se llama espacio de medida.
+ \end{dinglist} 
+\section{Teorema}
+ \textbf{Teorema} Las siguientes afirmaciones son equivalentes para un grupo $G$:
+\begin{align*}
+1. & \quad P(G) = 1 & 4. & \quad G' = \{1\} \\
+2. & \quad G \text{ es abeliano} & 5. & \quad CG(a) = G \text{ para todo } a \in G \\  
+3. & \quad Z(G) = G & 6. & \quad G/G' \cong G 
+\end{align*}
+
+\begin{proof}
+   Si $P(G) = 1$, entonces $|L(G)| = |G|^2$. Luego, $L(G) = G^2$, lo cual implica que $xy = yx$ para todo $x, y \in G$. Así, $G$ es un grupo abeliano. Es inmediato observar que el razonamiento inverso también es cierto, lo que prueba que 1 es equivalente a 2.
+\end{proof}
+Según este resultado, para tener grados de conmutatividad diferentes de 1, debemos analizar grupos no abelianos. 
+\end{document}
